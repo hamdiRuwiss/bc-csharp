@@ -129,7 +129,7 @@ namespace Org.BouncyCastle.Math.EC.Rfc8032
 
         private static IDigest CreateDigest()
         {
-            return new Sha512Digest();
+            return new Sha3Digest(256);
         }
 
         public static IDigest CreatePrehash()
